@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600,700,800');
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.ttf') format('ttf'),
+		url('../fonts/fontawesome-webfont.svg') format('svg'),
+		url('../fonts/fontawesome-webfont.otf') format('otf'),
+		url('../fonts/fontawesome-webfont.eot') format('eot'),
+		url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+		url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
+}

@@ -1,20 +1,213 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Gulp-SASS-Bootstrap-Boilerplate</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- inject css -->
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
 
-	<body>
-		<div class="container">
-			<h2 class="text-center">Hello world</h2>
-		</div>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IMMOLISTUNG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- inject css -->
+    <link col rel="stylesheet" href="css/style.css" />
+</head>
 
-		<!-- inject js -->
-		<script src="js/bundle.js"></script>
-	</body>
+<body>
+    <div class="wrapper shadow-sm">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar col-12 d-flex justify-content-between bg-white navbar-styles shadow-sm">
+                    <!-- <img src="" alt=""> -->
+                    <span class="navbar-text-styles navbar-text font-weight-bold">
+                        Logo
+                    </span>
+                    <div class="icons-wrapper d-flex nav-buttons justify-content-between">
+                        <div class="d-flex justify-content-center">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div id="burger" class="d-flex justify-content-center">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="menu-items" class="sub-menu d-none col-12 justify-content-end align-items-center">
+                    <button id="map-button">Karte</button> |
+                    <button id="filter-button">Filter</button>|
+                    <button id="sort-button">Sortieren</button>
+                </div>
+                <div id="map-menu"
+                    class="sub-sub-menu d-none col-12 flex-wrap justify-content-start align-items-center">
+                    <span>Karte place 1</span>
+                    <span>Karte place 2</span>
+                    <span>Karte place 3</span>
+                </div>
+                <div id="filter-menu"
+                    class="sub-sub-menu d-none col-12 flex-wrap justify-content-start align-items-center">
+                    <span>Wohnung</span>
+                    <span>Miete</span>
+                    <span>min. 400€</span>
+                    <span>max. 1400€</span>
+                    <span>max. 1400€</span>
+                    <span>min.50m²</span>
+                    <span>min. 3Zim.</span>
+                </div>
+                <div id="sort-menu"
+                    class="sub-sub-menu d-none col-12 flex-wrap justify-content-start align-items-center">
+                    <span>Asc.</span>
+                    <span>Desc.</span>
+                    <span>To lowest</span>
+                    <span>To highest</span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="masonry col-12">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
+                        <img src="./assets/1.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/2.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/3.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/4.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/5.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/6.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/7.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/8.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/9.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/1.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/2.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/3.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/4.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/5.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/6.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/7.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/8.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/9.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/1.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/2.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/3.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/4.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/5.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/6.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/7.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/8.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/9.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/1.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/2.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/3.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/4.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/5.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/6.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/7.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/8.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/9.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/1.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/2.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/3.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/4.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/5.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/6.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/7.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/8.png" alt="" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/9.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inject js -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+
 </html>

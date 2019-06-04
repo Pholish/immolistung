@@ -26,13 +26,15 @@ var sass_src = './src/sass/main.scss',
 	dist = './dist',
 	html_dest = './dist/**/*.html',
 	assets = './dist/assets',
+	fonts = './dist/fonts',
 	build = './dist/build/',
 	temp = './dist/build/temp/',
 	js_temp = './dist/build/temp/js',
 	css_temp = './dist/build/temp/css',
 	jquery = 'node_modules/jquery/dist/jquery.min.js',
 	popperjs = 'node_modules/popper.js/dist/umd/popper.min.js',
-	bootstrap = 'node_modules/bootstrap/dist/js/bootstrap.min.js';
+	bootstrap = 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+	fa_fonts = 'node_modules/font-awesome/fonts/*';
 
 // hashing task
 gulp.task('hash', function() {
@@ -147,16 +149,33 @@ gulp.task(
 	}),
 );
 
+// build fonts
+gulp.task('build-fonts', () => {
+	return gulp.src(fa_fonts).pipe(gulp.dest(fonts));
+});
+
 // build and minify
 gulp.task(
 	'build-compress',
-	gulp.parallel('build-html', 'build-sass', 'compress-js', 'optimise-img'),
+	gulp.parallel(
+		'build-html',
+		'build-fonts',
+		'build-sass',
+		'compress-js',
+		'optimise-img',
+	),
 );
 
 // build files
 gulp.task(
 	'build-all',
-	gulp.parallel('build-html', 'build-sass', 'bundle-js', 'optimise-img'),
+	gulp.parallel(
+		'build-html',
+		'build-fonts',
+		'build-sass',
+		'bundle-js',
+		'optimise-img',
+	),
 );
 
 // clean previous build
@@ -205,6 +224,7 @@ gulp.task(
 			server: {
 				baseDir: './dist/',
 			},
+			port: 8080,
 		});
 	}),
 );
