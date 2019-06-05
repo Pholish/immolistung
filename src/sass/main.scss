@@ -132,7 +132,17 @@ body {
 			height: 250px;
 		}
 	}
-	.grid-item:nth-child(10n) {
+	.grid-item:nth-child(12n) {
+		width: 66%;
+		height: 500px;
+		@media (max-width: 560px) {
+			height: 380px;
+		}
+		@media (max-width: 411px) {
+			height: 250px;
+		}
+	}
+	.grid-item:nth-child(14n) {
 		width: 66%;
 		height: 500px;
 		@media (max-width: 560px) {
